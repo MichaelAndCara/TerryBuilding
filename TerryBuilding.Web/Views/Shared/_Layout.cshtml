@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry Building Company</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse custom-navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand custom-navbar-brand" href="@Url.Content("~/")">
+                    @*<img src="~/Content/logo.png" />*@
+                    <img src="~/Content/logo_new_60.png" class="img-rounded" />
+                </a>
+                @*<p class="mobileTel hidden-lg hidden-md hidden-sm">
+                    <a class="navbar-link" href="tel:18009005777">
+                        1 (800) 900-5777  <span class="glyphicon glyphicon-phone"></span>
+                    </a>
+                </p>*@
+            </div>
+            @*<div class="navbar-header navbar-right hidden-xs">
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="tel:18009005777">1 (800) 900-5777  <span class="glyphicon glyphicon-phone"></span></a>
+                    </li>
+                </ul>
+            </div>*@
+            <div class="hidden-xs" style="height:40px;">
+            </div>
+            <div class="navbar-left navbar-collapse collapse navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Commercial", "Commercial", "Projects")</li>
+                    <li>@Html.ActionLink("Industrial", "Industrial", "Projects")</li>
+                    <li>@Html.ActionLink("Retail", "Retail", "Projects")</li>
+                    <li>@Html.ActionLink("Religious", "Religious", "Projects")</li>
+                    <li>@Html.ActionLink("Agriculture", "Agriculture", "Projects")</li>
+                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Team", "Team", "About")</li>
+                            @*<li>@Html.ActionLink("History", "History", "About")</li>*@
+                            @*<li>@Html.ActionLink("Quality", "Quality", "About")</li>*@
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="min-height:800px">
+        @RenderBody()
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-4">
+                    <p>&copy; Terry Building Co., Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <span>
+                        <a target="_blank" href="https://www.facebook.com/TerryBuilding/"><span class="fa fa-facebook-square fa-2x fa-custom-color" aria-hidden="true"></span></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCXS_UrIXDq_MQx9NRvoylMg"><span class="fa fa-youtube-square fa-2x fa-custom-color" aria-hidden="true"></span></a>
+                        @*<a target="_blank" href="#"><span class="fa fa-linkedin-square fa-2x fa-custom-color" aria-hidden="true"></span></a>
+                        <a target="_blank" href="#"><span class="fa fa-twitter-square fa-2x fa-custom-color" aria-hidden="true"></span></a>*@
+                    </span>
+                </div>
+                <div class="col-md-4 col-xs-4 pull-right">
+                    <a target="_blank" href=" https://www.bbb.org/oklahomacity/business-reviews/building-metal/terry-building-co-inc-in-oklahoma-city-ok-5000948">
+                        <img class="pull-right" src="~/Content/bbb-logo-64.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

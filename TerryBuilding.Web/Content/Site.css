@@ -1,0 +1,121 @@
+﻿body {
+    /*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
+    /*position: relative;
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background-color: rgba(245, 245, 245, 1);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    min-height: 800px;*/
+    width: 95%;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*.footer {
+    background-color: #2a2730;
+    color: #99979c;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}*/
+
+.mobileTel {
+    margin-top: 60px;
+}
+
+.custom-navbar-brand 
+{
+    height: 91px;
+}
+
+.custom-navbar {
+    background-color: #2a2730;
+}
+
+.navbar > .container{
+    width: 95%;
+}
+
+/*.navbar-main {
+    margin-top: 40px;
+}*/
+
+/*.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 380px;
+}*/
+
+.modal-open {
+    overflow: scroll;
+}
+
+.panel.panel-default {
+    background-color: rgba(245, 245, 245, .95);
+}
+
+.panel-body {
+    min-height:800px;
+} 
+
+.fa-custom-color {
+    color: #99979c;
+}
+
+/*.carousel {
+    margin-left: 10px;
+    margin-right: 10px;
+}*/
+
+/*.carousel-inner > .item > img {
+    margin: 0 auto;
+}*/
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+/*.carousel-inner img {
+    margin: auto;
+}*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%; /* use this, or not */
+    margin: auto;
+}
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 100px;
+    background-color: #2a2730;
+    color: #99979c;
+}
